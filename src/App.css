@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #af7eeb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
   min-height: 100vh;
+  font-size: 1.2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: #d7e0ff;
+  font-family: "Poppins", sans-serif;
+  color: #151521;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-top: 6px solid var(--primary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  text-align: center;
+  padding: 0.6rem 0;
+}
+
+.input-cont {
+  margin: 2rem 0;
+}
+
+button {
+  background: var(--primary-color);
+  border: none;
+}
+
+i {
+  font-size: 1.2rem;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+.submit-btn {
+  width: 80px;
+  height: 45px;
+  padding: 0;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  width: 400px;
+  height: 32px;
+  margin: 0 0.5rem 0 0;
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.task-item {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem 1rem;
+  cursor: pointer; 
+}
+
+.task-count {
+  font-size: 14px;
 }
